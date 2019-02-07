@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+<%@ page import="org.example.servlet.model.UserSalary" %>
+<%@ page import="org.example.servlet.model.User" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h2>User Salary Details:-</h2>
+
+<% UserSalary usrSal = (UserSalary)request.getAttribute("usrSalary");
+User usr=(User)request.setAttribute("user", usr);
+%>
+
+<div>
+${userSal}
+
+</br>
+UserId:- <p> ${usrSal.getUserId() }</p></br>
+
+Basic:- <P> ${usr.getSalary()  }</p> </br>
+
+HomeAndRentAllowances :- <p> ${usrSal.getHra() }</p></br>
+
+Bonus:- <p> ${usrSal.getBonus() }</p></br>
+
+PF :- <p> ${usrSal.getPf() }</p></br>
+
+Gratuity:- <p> ${usrSal.getGratuity() } </p></br>
+
+VariablePay:- <p> ${usrSal.getVariablePay() }</p></br>
+
+Medical:- <p> ${usrSal.getMedical() }</p></br>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+package org.example.servlet.model;
+
+public class UserSalary {
+	
+	private String userId;
+	private int salary;
+	
+	public UserSalary() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+	@Override
+	public String toString() {
+		return "UserSalary [userId=" + userId + ", salary=" + salary + "]";
+	}
+	
+	
+
+}

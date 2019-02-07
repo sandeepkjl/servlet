@@ -1,0 +1,18 @@
+package org.example.servlet.model;
+
+public class UserSalary {
+	
+	private String userId;
+	private double basic;
+	
+	private double hra;
+	private double bonus;
+	private double pf;
+	private double gratuity;
+	private double variablePay;
+	private double medical;
+	
+	
+	
+
+}

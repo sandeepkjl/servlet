@@ -1,0 +1,5 @@
+package org.example.servlet.model;
+
+public class User {
+
+}
